@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import {BrowserRouter,} from "react-router-dom";
 import background from './assets/images/background.jpeg'
 import AnimatedRoutes from "./components/AnimatedRoutes";
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                     </div>
                 </div>
             </div>
+           <Analytics/>
         </BrowserRouter>
     );
 }
